@@ -1,0 +1,4 @@
+styles:
+  css:
+    component:
+      css/scarf.css: {}

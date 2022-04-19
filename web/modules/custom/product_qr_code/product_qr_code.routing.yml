@@ -1,0 +1,7 @@
+example.content:
+  path: '/qr-code-example' 
+  defaults: 
+    _controller: '\Drupal\product_qr_code\Controller\ProductQrController::content' 
+    _title: 'QR World'
+  requirements: 
+    _permission: 'access content'
