@@ -4,6 +4,8 @@ Problem Statment: https://github.com/Dineshkushwaha/sph-test/blob/main/README.md
 
 Hosted the Solution on https://dev-nodeqr.pantheonsite.io/
 
+Drupal Version Used for Solution : 9.3.11
+
 Answer QR Code Block Implementation 
 -----------------------------------------------------------------------------------------------
 
