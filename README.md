@@ -12,15 +12,15 @@ Answer QR Code Block Implementation
 I have implemented the solution in 2 ways
 
 1] I have used Drupal's Core module Layout Builder to Place Block on Node
-
+-----------------------------------------------------------------------------------------------
 2] I have made a use of template_preprocess_node hook to pass block content as vaiable
-----------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
 
 I have used PHP Library "aferrandini/phpqrcode" to generate QR image for the given link
 
 (This Library is abonded now, but it has minimal code to generate QR)
 
-I can also make use of Endriod Library for the same QR generation.
+We can also make use of Endriod Library for the same QR generation.
 ---------------------------------------------------------------------------------------------
 I have created 1 custom Module called "product_qr_code" for Block generation
 
@@ -29,9 +29,10 @@ Block genration was really tricky because of its Dynamic behviour with every Nod
 But I found the way to get the node context using Route details and I used Purchase Link for QR generation.
 
 -----------------------------------------------------------------------------------------------
-I have also created 1 sub theme with Name "Bsub" which mean BartikSub theme
 
-This theme I created for the 2nd approache where I passed Block as varible to Hook_prepprocess_hook
+I have also created 1 sub theme with Name "Bsub" which means BartikSub theme
+
+This theme I created for the 2nd approach where I passed Block as variable to Hook_prepprocess_hook
 
 -----------------------------------------------------------------------------------------------
 
@@ -42,6 +43,7 @@ Devel generate - to generate a content
 Pathauto for URL Alias Pattern Generation
 
 Admin Toolbar - to Save the time of browsing the different admin links
+
 --------------------------------------------------------------------------------------------
 
 The Node page shows 2 QR code but those are 2 different implementations on same page.
@@ -53,13 +55,13 @@ To use this  module on your local
 
 2] Enable all 3 modules
 
-3] Install custom Module
+3] Install custom Module  - **product_qr_code**
 
-4] Install Custom theme
+4] Install Custom theme   - **Bsub**
 
-5] Create Content type I will provide the config file for the same in my project package
+5] Create Content type - Products with Fields: Product Title, Product Image, Product Description and App Purchase Link
 
-6] Generate content
+6] Generate content - Devel gernerate
 
 7] Configure Layout for first approch impmplementation of Block
 
@@ -71,9 +73,10 @@ To use this  module on your local
 
 11] Add new Section and use 2 col layout - 66&-33%
 
-12] Add block for every field of product content type
-
-13] Place Programatic block in 2nd column
+12] Add blocks for every field of product content type i.e. Product Title, Product Image, Product Description and App Purchase Link
+ 
+13] Place Programatically created Custom Block block in 2nd column - 
 
 14] Save Layout
+
 ---------------------------------------------------------------------------------------------
